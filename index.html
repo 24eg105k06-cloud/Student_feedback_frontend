@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Feedback System</h1>
+        <p>Share your feedback and help us improve education</p>
+    </header>
+
+    <main class="container">
+        <h2>Feedback Form</h2>
+        <p class="subtitle">Please fill in the details below.</p>
+
+        <form id="feedbackForm">
+
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName"
+                   placeholder="Enter your name" required>
+
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber"
+                   placeholder="Enter your roll number" required>
+
+            <label for="department">Department</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="CSE">Computer Science (CSE)</option>
+                <option value="AIML">Artificial Intelligence (AIML)</option>
+                <option value="ECE">Electronics (ECE)</option>
+                <option value="EEE">Electrical (EEE)</option>
+                <option value="IT">Information Technology (IT)</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <select id="subject" required>
+                <option value="">Select Subject</option>
+                <option value="DBMS">DBMS</option>
+                <option value="DSA">Data Structures and Algorithms</option>
+                <option value="OS">Operating Systems</option>
+                <option value="AI">Artificial Intelligence</option>
+                <option value="Java">Java Programming</option>
+            </select>
+
+            <label for="teacher">Faculty Name</label>
+            <input type="text" id="teacher"
+                   placeholder="Enter faculty name" required>
+
+            <label for="rating">Teaching Rating</label>
+            <select id="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">★★★★★ - Excellent</option>
+                <option value="4">★★★★ - Very Good</option>
+                <option value="3">★★★ - Good</option>
+                <option value="2">★★ - Average</option>
+                <option value="1">★ - Needs Improvement</option>
+            </select>
+
+            <label for="comments">Your Feedback</label>
+            <textarea id="comments" rows="4"
+                      placeholder="Write your suggestions here..."
+                      required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+            <p id="message" role="status"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Student Feedback System | Academic Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
